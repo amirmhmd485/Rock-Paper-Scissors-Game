@@ -76,11 +76,25 @@ body{
         font-size: 22px;
         span:first-child{
             color: #007bff;
-            font-weight: 600;
+            font-weight: 500;
         }
         span:last-child{
             color: #dc3545;
-            font-weight: 600;
+            font-weight: 500;
         }
     }
 }
+
+@media (max-width: 500px){
+    h2{
+        font-size: 18px;
+    }
+    .game p:last-child{
+        font-size: 18px;
+    }
+    #rock,#paper,#scissors{
+        width: 80px;
+        font-size: 35px;
+    }
+}
+
