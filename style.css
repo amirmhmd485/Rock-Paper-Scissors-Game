@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: fit-content;
+    width: 600px;
+    max-width: 100%;
+    h2{
+        font-weight: 900;
+    }
+    .choose{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: inherit;
+        p{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+            button{
+                width: 100px;
+                height: 100px;
+                border-radius: 15px;
+                border: 2px solid #ccc;
+                font-size: 50px;
+                cursor: pointer;
+                transition: 0.5s;
+                &:active{
+                    transform: scale(0.5);
+                }
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                        opacity: 0.5;
+                    }
+                &:first-child{
+                    background-color: red;
+                    color: #fff;
+                    
+                }
+                &:nth-child(2){
+                    background-color: blue;
+                    color: #212529;
+                }
+                &:last-child{
+                    background-color: green;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    p:last-child{
+        font-size: 22px;
+        span:first-child{
+            color: #007bff;
+            font-weight: 600;
+        }
+        span:last-child{
+            color: #dc3545;
+            font-weight: 600;
+        }
+    }
+}
